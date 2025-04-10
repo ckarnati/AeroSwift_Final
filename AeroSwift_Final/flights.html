@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <title>Available Flights | AeroSwift</title>
+  <style>
+    * { font-family: Montserrat; box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background-color: #f7f9fc;
+    }
+
+    header {
+      background-color: #052257;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 70px;
+    }
+
+    #nav-logo a {
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    .nav-menu ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-menu ul li {
+      padding: 5px;
+    }
+
+    .nav-menu ul li a {
+      padding: 20px;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    .nav-menu ul li a:hover {
+      color: rgb(231, 223, 223);
+      transition: 0.3s ease;
+    }
+
+    .nav-register a {
+      color: rgb(226, 212, 212);
+      font-size: 18px;
+      padding: 12px;
+      border-radius: 10px;
+      background-color: rgb(241, 17, 17);
+      text-decoration: none;
+    }
+
+    .nav-register a:hover {
+      background-color: rgb(172, 13, 13);
+      transition: 0.2s ease;
+    }
+
+    .available-flights {
+      max-width: 900px;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .flight-card {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .flight-details {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .flight-details h4 {
+      font-size: 22px;
+      color: #014a34;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .flight-details p {
+      margin: 2px 0;
+      font-size: 16px;
+      color: #222;
+      font-weight: 600;
+    }
+
+    .flight-price {
+      text-align: right;
+    }
+
+    .flight-price strong {
+      font-size: 24px;
+      color: #e63946;
+      font-weight: 700;
+    }
+
+    .flight-price span {
+      font-size: 14px;
+      color: #555;
+      font-weight: 500;
+      display: block;
+      margin-top: 4px;
+    }
+
+    footer {
+      background-color: #052257;
+      padding: 10px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .footer-flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-flex h5 {
+      color: white;
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .footer-flex a {
+      color: white;
+      font-size: 14px;
+      margin: 5px;
+      text-decoration: none;
+    }
+
+    .footer-flex a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div id="nav-logo"><a href="#">AeroSwift</a></div>
+      <div class="nav-menu">
+        <ul>
+          <li><a href="landing.html">Home</a></li>
+          <li><a href="manage.html">Manage Your Bookings</a></li>
+          <li><a href="flights.html">Flights</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="nav-register"><a href="register.html">Register</a></div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="available-flights">
+      <div class="flight-card">
+        <div class="flight-details">
+          <h4>Air Canada</h4>
+          <p>From: <strong>Toronto (YYZ)</strong></p>
+          <p>To: <strong>Edmonton (YEG)</strong></p>
+          <p>Date: <strong>2025-04-10</strong></p>
+          <p>Class: <strong>Economy</strong></p>
+          <p>Non-stop • Seat & Carry-on included</p>
+        </div>
+        <div class="flight-price">
+          <strong>CA $420</strong>
+          <span>Roundtrip per traveller</span>
+        </div>
+      </div>
+
+      <div class="flight-card">
+        <div class="flight-details">
+          <h4>WestJet</h4>
+          <p>From: <strong>Toronto (YYZ)</strong></p>
+          <p>To: <strong>Edmonton (YEG)</strong></p>
+          <p>Date: <strong>2025-04-10</strong></p>
+          <p>Class: <strong>Economy</strong></p>
+          <p>1 stop • Seat & Carry-on included</p>
+        </div>
+        <div class="flight-price">
+          <strong>CA $395</strong>
+          <span>Roundtrip per traveller</span>
+        </div>
+      </div>
+
+      <div class="flight-card">
+        <div class="flight-details">
+          <h4>Delta Airlines</h4>
+          <p>From: <strong>Toronto (YYZ)</strong></p>
+          <p>To: <strong>Edmonton (YEG)</strong></p>
+          <p>Date: <strong>2025-04-10</strong></p>
+          <p>Class: <strong>Economy</strong></p>
+          <p>2 stops • Seat & Carry-on included</p>
+        </div>
+        <div class="flight-price">
+          <strong>CA $450</strong>
+          <span>Roundtrip per traveller</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-flex">
+      <h5>AeroSwift</h5>
+      <a href="about.html">About Us</a>
+      <a href="#">Our Policy</a>
+      <a href="#">Promotions</a>
+      <a href="#">Careers</a>
+      <a href="#">Membership</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </footer>
+</body>
+</html>
